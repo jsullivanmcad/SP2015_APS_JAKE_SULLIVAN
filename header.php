@@ -18,19 +18,25 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'minimal-ecomm' ); ?></a>
+	<div class="header-area full">
+		<div class="main-page">
+			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'minimal-ecomm' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
+			<header id="masthead" class="site-header inner" role="banner">
+				<div class="site-branding">
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'minimal-ecomm' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'minimal-ecomm' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				</nav><!-- #site-navigation -->
+			</header><!-- #masthead -->
+		</div><!-- .header-area full -->
+	</div><!-- .main-page-->
 
-	<div id="content" class="site-content">
+
+	<div class="main-content-area full">
+		<div class="main-page">
+			<div id="content" class="site-content">
